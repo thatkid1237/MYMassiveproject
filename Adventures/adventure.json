@@ -1,0 +1,172 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "text": "You wake up in a mysterious glade within a vast open world reminiscent of your favorite game. The sun filters through the trees and you hear the rustling of leaves. In the distance you glimpse the silhouette of a figure dressed in a green tunic.",
+      "options": [
+        {"choice": "Approach the mysterious figure", "next": "approachHero"},
+        {"choice": "Explore the glade on your own", "next": "exploreAlone"},
+        {"choice": "Stay and reflect on your feelings", "next": "reflect"}
+      ]
+    },
+
+    {
+      "id": "approachHero",
+      "text": "As you draw near, the figure turns. It's a young hero with pointed ears, an adventurous glint in his eye and a familiar green tunic. He smiles and introduces himself as a wandering hero in need of a companion on a quest.",
+      "options": [
+        {"choice": "Accept his invitation to join the quest", "next": "joinQuest"},
+        {"choice": "Ask the hero about his story", "next": "askAboutHero"},
+        {"choice": "Politely decline and go your separate ways", "next": "goSeparateWays"}
+      ]
+    },
+
+    {
+      "id": "exploreAlone",
+      "text": "You decide to explore the glade on your own. A narrow path leads into a dense forest, while another winds up toward a towering mountain.",
+      "options": [
+        {"choice": "Follow the path into the forest", "next": "forestPath"},
+        {"choice": "Climb the path up the mountain", "next": "mountainPath"}
+      ]
+    },
+
+    {
+      "id": "reflect",
+      "text": "You sit under a tree and reflect on the times you played adventures as a child and the feelings you discovered along the way. You remember when you first realized you were gay while playing through a beloved legend and how the hero's courage inspired you to be yourself.",
+      "options": [
+        {"choice": "After reflecting, you feel ready to explore", "next": "exploreAlone"},
+        {"choice": "You continue to sit quietly and the mysterious figure approaches you", "next": "approachHero"}
+      ]
+    },
+
+    {
+      "id": "joinQuest",
+      "text": "You agree to accompany the hero. Together you travel to an ancient temple that houses a complex puzzle. The hero asks for your help to solve it.",
+      "options": [
+        {"choice": "Work together to solve the puzzle", "next": "solvePuzzleTogether"},
+        {"choice": "Let the hero take the lead in solving the puzzle", "next": "heroSolvesPuzzle"},
+        {"choice": "Take a deep breath and express your feelings to the hero", "next": "expressFeelings"}
+      ]
+    },
+
+    {
+      "id": "askAboutHero",
+      "text": "You ask the hero about his journey. He tells you about the monsters he's faced and the legends he's following. In turn, you share your experiences and how his adventures helped you accept who you are.",
+      "options": [
+        {"choice": "Feeling connected, you decide to join his quest", "next": "joinQuest"},
+        {"choice": "You decide to part ways and continue exploring alone", "next": "exploreAlone"}
+      ]
+    },
+
+    {
+      "id": "goSeparateWays",
+      "text": "You politely decline the hero's invitation. He nods understandingly and wishes you luck. As he disappears down the path, you feel a mix of relief and longing.",
+      "options": [
+        {"choice": "Change your mind and follow him from a distance", "next": "approachHero"},
+        {"choice": "Continue exploring the glade on your own", "next": "exploreAlone"}
+      ]
+    },
+
+    {
+      "id": "forestPath",
+      "text": "The forest is alive with birdsong and the glow of fireflies. A mischievous fairy flits around you and offers to tell you a riddle in exchange for a reward.",
+      "options": [
+        {"choice": "Listen and try to solve the fairy's riddle", "next": "solveRiddle"},
+        {"choice": "Politely ignore the fairy and continue on your way", "next": "ignoreRiddle"},
+        {"choice": "Ask the fairy for guidance instead of a riddle", "next": "askFairyHelp"}
+      ]
+    },
+
+    {
+      "id": "mountainPath",
+      "text": "You begin climbing the rugged mountain path. The ascent is challenging but rewarding. Near the summit you find a hidden shrine containing an ancient weapon.",
+      "options": [
+        {"choice": "Take the weapon and continue exploring", "next": "continueAfterMountain"},
+        {"choice": "Respectfully leave the weapon and return to the glade", "next": "exploreAlone"}
+      ]
+    },
+
+    {
+      "id": "solvePuzzleTogether",
+      "text": "Working side by side, you and the hero solve the temple's puzzle. The door opens and the hero smiles at you with gratitude. You feel a strong connection between you.",
+      "options": [
+        {"choice": "Share your feelings with him", "next": "expressFeelings"},
+        {"choice": "Continue on the adventure together", "next": "continueAdventure"}
+      ]
+    },
+
+    {
+      "id": "heroSolvesPuzzle",
+      "text": "You step back and let the hero work. He gracefully solves the puzzle. You feel safe and impressed watching him in action.",
+      "options": [
+        {"choice": "Take this quiet moment to tell him how you feel", "next": "expressFeelings"},
+        {"choice": "Follow him deeper into the temple", "next": "continueAdventure"}
+      ]
+    },
+
+    {
+      "id": "expressFeelings",
+      "text": "Gathering your courage, you tell the hero about the feelings you've been holding onto — the admiration that grew into affection and how his adventures helped you discover your identity. The hero listens quietly and then smiles warmly, placing a gentle hand on your shoulder.",
+      "options": [
+        {"choice": "Continue the adventure together, now with a deeper bond", "next": "continueAdventure"},
+        {"choice": "Sit together in the temple and enjoy the moment", "next": "peacefulEnding"}
+      ]
+    },
+
+    {
+      "id": "solveRiddle",
+      "text": "The fairy's riddle challenges your wit, but you think back to puzzles you've solved in games and come up with the answer. Delighted, the fairy hands you a glowing charm and wishes you luck.",
+      "options": [
+        {"choice": "Use the charm to help you on your journey", "next": "continueAdventure"},
+        {"choice": "Return to the glade with the fairy's blessing", "next": "exploreAlone"}
+      ]
+    },
+
+    {
+      "id": "ignoreRiddle",
+      "text": "You ignore the fairy. She pouts and disappears in a swirl of sparkles, leaving you feeling slightly guilty.",
+      "options": [
+        {"choice": "Call out and apologize to the fairy", "next": "askFairyHelp"},
+        {"choice": "Keep walking deeper into the forest", "next": "continueAdventure"}
+      ]
+    },
+
+    {
+      "id": "askFairyHelp",
+      "text": "You ask the fairy for help rather than a riddle. She grins and becomes your guide, flitting ahead to light your path.",
+      "options": [
+        {"choice": "Follow the fairy deeper into the forest", "next": "continueAdventure"},
+        {"choice": "Thank the fairy and head back to the glade", "next": "exploreAlone"}
+      ]
+    },
+
+    {
+      "id": "continueAfterMountain",
+      "text": "With the ancient weapon at your side, you feel empowered. The path leads you to a place where you can see the temple in the distance. Maybe this will help you if you decide to join the hero after all.",
+      "options": [
+        {"choice": "Travel to the temple and look for the hero", "next": "approachHero"},
+        {"choice": "Keep exploring the wilderness on your own", "next": "continueAdventure"}
+      ]
+    },
+
+    {
+      "id": "continueAdventure",
+      "text": "Your adventure continues through forests, mountains and ancient ruins. Along the way you encounter challenges that help you grow braver and more certain of who you are. Eventually you and the hero, if you chose to travel together, stand before a breathtaking vista — a symbol of your journey.",
+      "options": [
+        {"choice": "Reflect on how far you've come", "next": "peacefulEnding"},
+        {"choice": "Seek out new adventures beyond the horizon", "next": "openEnding"}
+      ]
+    },
+
+    {
+      "id": "peacefulEnding",
+      "text": "You find a quiet place overlooking the world you've traversed. Whether alone or with the hero by your side, you feel at peace knowing that the journey helped you discover yourself and that your feelings are a source of strength.",
+      "options": []
+    },
+
+    {
+      "id": "openEnding",
+      "text": "You decide that your adventure doesn't end here. There are still lands to explore, mysteries to uncover and bonds to deepen. With a smile and your heart full of courage, you step forward into the unknown.",
+      "options": []
+    }
+  ]
+}
